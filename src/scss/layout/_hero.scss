@@ -1,0 +1,48 @@
+/*HERO*/
+
+.hero {
+  height: 100vh;
+  background-image: url(../images/cover.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+}
+
+.menu-button {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: $menu-color;
+  border-style: none;
+  padding: 8px;
+}
+
+.hero-title {
+  font-family: $font-title;
+  color: $secondary-text-color;
+  font-weight: bold;
+  font-size: 42px;
+  text-transform: uppercase;
+  line-height: 50px;
+}
+
+.hero-paragraph {
+  font-family: $font-main;
+  color: $secondary-text-color;
+  margin: 30px;
+}
+
+.hero-arrow {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border-style: none;
+  padding-top: 8px;
+  background-color: white;
+  margin-bottom: 35px;
+}

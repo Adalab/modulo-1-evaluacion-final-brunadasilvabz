@@ -1,0 +1,36 @@
+/*FOOTER*/
+
+.footer {
+  background-color: $primary-bg-color;
+  color: $secondary-text-color;
+  font-family: $font-main;
+  font-size: 14px;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding-bottom: 40px;
+}
+
+.footer-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 25px;
+  border-style: none;
+  background-color: white;
+  transform: translateY(-50%);
+}
+
+.nav1-link,
+.nav2-link {
+  text-decoration: none;
+  color: $secondary-text-color;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.footer-heart {
+  color: $statement-color;
+}

@@ -1,0 +1,206 @@
+/*@import 'core/variables';
+@import 'core/reset';
+@import 'components/code';
+@import 'components/links';
+@import 'layout/page';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'pages/index'; */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*HERO*/
+.hero {
+  height: 100vh;
+  background-image: url(../images/cover.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  text-align: center; }
+
+.menu-button {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #0271bc;
+  border-style: none;
+  padding: 8px; }
+
+.hero-title {
+  font-family: "Roboto Slab", serif;
+  color: white;
+  font-weight: bold;
+  font-size: 42px;
+  text-transform: uppercase;
+  line-height: 50px; }
+
+.hero-paragraph {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin: 30px; }
+
+.hero-arrow {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border-style: none;
+  padding-top: 8px;
+  background-color: white;
+  margin-bottom: 35px; }
+
+/*SECTION 1*/
+.section1 {
+  height: 60vh;
+  padding: 15px; }
+
+.section1-small {
+  margin-top: 35px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #8ccbea;
+  text-transform: capitalize;
+  line-height: 30px; }
+
+.section1-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+  text-transform: capitalize;
+  line-height: 30px; }
+
+.section1-paragraph {
+  font-family: "Roboto", sans-serif;
+  color: #4a4a4a;
+  line-height: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px; }
+
+.section1-button {
+  height: 40px;
+  width: 70px;
+  border-radius: 20px;
+  border-color: #f26002;
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #f26002; }
+
+/*SECTION 2*/
+.section2 {
+  margin-top: 40px;
+  padding: 15px;
+  background-color: #eff9ff;
+  text-align: center; }
+
+.section2-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+  text-transform: capitalize;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-bottom: 30px; }
+
+.section2-list-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  line-height: 30px; }
+
+.section2-list-paragraph {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 30px; }
+
+.section2-button {
+  height: 45px;
+  width: 180px;
+  border-radius: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  background-color: #f26002;
+  border-style: none;
+  margin-top: 50px;
+  margin-bottom: 40px; }
+
+/*FOOTER*/
+.footer {
+  background-color: #304268;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding-bottom: 40px; }
+
+.footer-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 25px;
+  border-style: none;
+  background-color: white;
+  transform: translateY(-50%); }
+
+.nav1-link,
+.nav2-link {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase; }
+
+.footer-heart {
+  color: #f26002; }
+
+/*# sourceMappingURL=main.css.map */

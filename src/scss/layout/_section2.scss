@@ -1,0 +1,43 @@
+/*SECTION 2*/
+
+.section2 {
+  margin-top: 40px;
+  padding: 15px;
+  background-color: $secondary-bg-color;
+  text-align: center;
+}
+
+.section2-title {
+  font-family: $font-title;
+  font-size: 24px;
+  text-transform: capitalize;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.section2-list-title {
+  font-family: $font-title;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.section2-list-paragraph {
+  font-family: $font-main;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.section2-button {
+  height: 45px;
+  width: 180px;
+  border-radius: 25px;
+  font-family: $font-main;
+  font-weight: 500;
+  font-size: 20px;
+  color: $secondary-text-color;
+  background-color: $statement-color;
+  border-style: none;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
