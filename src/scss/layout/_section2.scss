@@ -1,10 +1,17 @@
-/*SECTION 2*/
-
 .section2 {
-  margin-top: 40px;
-  padding: 15px;
   background-color: $secondary-bg-color;
+  padding: 15px;
+  display: grid;
   text-align: center;
+  grid-template-columns: 1fr;
+  
+  
+  
+
+  @media all and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 }
 
 .section2-title {
@@ -13,19 +20,49 @@
   text-transform: capitalize;
   line-height: 30px;
   margin-top: 10px;
-  margin-bottom: 30px;
+  /*margin-bottom: 10px;*/
+
+  @media all and (min-width: 768px) {
+    font-size: 26px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    
+  }
+
+  @media all and (min-width: 1280px) {
+    font-size: 32px;
+  }
+  
 }
 
-.section2-list-title {
+.section2-reasons-title {
   font-family: $font-title;
   font-size: 18px;
   line-height: 30px;
+
+  @media all and (min-width: 768px) {
+    font-size: 24px;
+  }
+ 
+  @media all and (min-width: 1280px) {
+
+  }
 }
 
-.section2-list-paragraph {
+.section2-reasons-paragraph {
   font-family: $font-main;
   font-size: 18px;
   line-height: 30px;
+  margin-bottom: 30px;
+
+  @media all and (min-width: 768px) {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+
+  @media all and (min-width: 1280px) {
+
+  }
 }
 
 .section2-button {
@@ -38,6 +75,16 @@
   color: $secondary-text-color;
   background-color: $statement-color;
   border-style: none;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 40px;
+
+  @media all and (min-width: 768px) {
+    width: 210px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  @media all and (min-width: 1280px) {
+    width: 255px;
+  }
 }

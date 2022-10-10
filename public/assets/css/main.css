@@ -81,25 +81,60 @@ table {
   font-size: 42px;
   text-transform: uppercase;
   line-height: 50px; }
+  @media all and (min-width: 768px) {
+    .hero-title {
+      font-size: 80px;
+      line-height: 1.30; } }
+  @media all and (min-width: 1280px) {
+    .hero-title {
+      font-size: 100px;
+      padding-left: 275px;
+      padding-right: 275px; } }
 
 .hero-paragraph {
   font-family: "Roboto", sans-serif;
   color: white;
-  margin: 30px; }
+  margin-top: 15px;
+  margin-bottom: 40px; }
+  @media all and (min-width: 768px) {
+    .hero-paragraph {
+      font-size: 24px;
+      width: 20ch;
+      line-height: 1.10;
+      margin: 20px; } }
+  @media all and (min-width: 1280px) {
+    .hero-paragraph {
+      width: 100vh;
+      margin: 15px; } }
 
 .hero-arrow {
-  height: 40px;
-  width: 40px;
+  height: 37px;
+  width: 37px;
   border-radius: 50%;
   border-style: none;
   padding-top: 8px;
   background-color: white;
   margin-bottom: 35px; }
+  @media all and (min-width: 768px) {
+    .hero-arrow {
+      height: 45px;
+      width: 42px;
+      margin-bottom: 70px; } }
+  @media all and (min-width: 1280px) {
+    .hero-arrow {
+      margin-bottom: 10px; } }
 
 /*SECTION 1*/
 .section1 {
-  height: 60vh;
   padding: 15px; }
+  @media all and (min-width: 768px) {
+    .section1 {
+      padding-left: 39px;
+      padding-right: 39px; } }
+  @media all and (min-width: 1280px) {
+    .section1 {
+      padding-left: 275px;
+      padding-right: 275px; } }
 
 .section1-small {
   margin-top: 35px;
@@ -123,22 +158,34 @@ table {
   margin-bottom: 30px; }
 
 .section1-button {
-  height: 40px;
-  width: 70px;
-  border-radius: 20px;
+  height: 45px;
+  width: 75px;
+  border-radius: 50px;
   border-color: #f26002;
+  border-style: solid;
   background-color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
-  color: #f26002; }
+  color: #f26002;
+  margin-bottom: 30px; }
+  @media all and (min-width: 768px) {
+    .section1-button {
+      width: 90px; } }
+  @media all and (min-width: 1280px) {
+    .section1-button {
+      width: 160px; } }
 
-/*SECTION 2*/
 .section2 {
-  margin-top: 40px;
-  padding: 15px;
   background-color: #eff9ff;
-  text-align: center; }
+  padding: 15px;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr; }
+  @media all and (min-width: 768px) {
+    .section2 {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr; } }
 
 .section2-title {
   font-family: "Roboto Slab", serif;
@@ -146,17 +193,33 @@ table {
   text-transform: capitalize;
   line-height: 30px;
   margin-top: 10px;
-  margin-bottom: 30px; }
+  /*margin-bottom: 10px;*/ }
+  @media all and (min-width: 768px) {
+    .section2-title {
+      font-size: 26px;
+      grid-column-start: 1;
+      grid-column-end: 4; } }
+  @media all and (min-width: 1280px) {
+    .section2-title {
+      font-size: 32px; } }
 
-.section2-list-title {
+.section2-reasons-title {
   font-family: "Roboto Slab", serif;
   font-size: 18px;
   line-height: 30px; }
+  @media all and (min-width: 768px) {
+    .section2-reasons-title {
+      font-size: 24px; } }
 
-.section2-list-paragraph {
+.section2-reasons-paragraph {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  line-height: 30px; }
+  line-height: 30px;
+  margin-bottom: 30px; }
+  @media all and (min-width: 768px) {
+    .section2-reasons-paragraph {
+      font-size: 20px;
+      margin-top: 5px; } }
 
 .section2-button {
   height: 45px;
@@ -168,8 +231,16 @@ table {
   color: white;
   background-color: #f26002;
   border-style: none;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 40px; }
+  @media all and (min-width: 768px) {
+    .section2-button {
+      width: 210px;
+      grid-column-start: 2;
+      grid-column-end: 3; } }
+  @media all and (min-width: 1280px) {
+    .section2-button {
+      width: 255px; } }
 
 /*FOOTER*/
 .footer {
@@ -178,20 +249,46 @@ table {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  /*text-align: center;*/
   gap: 20px;
   padding-bottom: 40px; }
 
 .footer-button {
-  height: 40px;
-  width: 40px;
+  text-align: center; }
+
+.footer-button-details {
+  height: 45px;
+  width: 45px;
   border-radius: 25px;
   border-style: none;
   background-color: white;
   transform: translateY(-50%); }
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px; }
+  @media all and (min-width: 768px) {
+    .footer-content {
+      text-align: left;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-right: 100px; }
+      .footer-content .nav1 {
+        order: 2; }
+      .footer-content .nav2 {
+        order: 3; }
+      .footer-content .copy {
+        order: 1; } }
+  @media all and (min-width: 1280px) {
+    .footer-content {
+      justify-content: center; }
+      .footer-content .nav1 {
+        margin-left: 50px; }
+      .footer-content .nav2 {
+        margin-left: 50px; } }
 
 .nav1-link,
 .nav2-link {
@@ -201,6 +298,7 @@ table {
   text-transform: uppercase; }
 
 .footer-heart {
-  color: #f26002; }
+  color: #f26002;
+  font-size: 20px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -29,20 +29,55 @@
   font-size: 42px;
   text-transform: uppercase;
   line-height: 50px;
+
+  @media all and (min-width: 768px) {
+    font-size: 80px;
+    line-height: 1.30;
+  }
+
+  @media all and (min-width: 1280px) {
+    font-size: 100px;
+    padding-left: 275px;
+    padding-right: 275px;
+    
+  }
 }
 
 .hero-paragraph {
   font-family: $font-main;
   color: $secondary-text-color;
-  margin: 30px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+
+  @media all and (min-width: 768px) {
+    font-size: 24px;
+    width: 20ch;
+    line-height: 1.10;
+    margin: 20px;
+  }
+
+  @media all and (min-width: 1280px) {
+    width: 100vh;
+    margin: 15px;
+  }
 }
 
 .hero-arrow {
-  height: 40px;
-  width: 40px;
+  height: 37px;
+  width: 37px;
   border-radius: 50%;
   border-style: none;
   padding-top: 8px;
   background-color: white;
   margin-bottom: 35px;
+
+  @media all and (min-width: 768px) {
+    height: 45px;
+    width: 42px;
+    margin-bottom: 70px;
+  }
+
+  @media all and (min-width: 1280px) {
+    margin-bottom: 10px;
+  }
 }

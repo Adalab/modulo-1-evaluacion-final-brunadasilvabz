@@ -6,21 +6,59 @@
   font-family: $font-main;
   font-size: 14px;
   line-height: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  /*text-align: center;*/
   gap: 20px;
   padding-bottom: 40px;
 }
 
 .footer-button {
-  height: 40px;
-  width: 40px;
+  text-align: center;
+}
+
+.footer-button-details {
+  height: 45px;
+  width: 45px;
   border-radius: 25px;
   border-style: none;
   background-color: white;
   transform: translateY(-50%);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+
+  @media all and (min-width: 768px) {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 100px;
+
+    .nav1 {
+      order: 2;
+    }
+    .nav2 {
+      order: 3;
+    }
+    .copy {
+      order: 1;
+    }
+  }
+
+  @media all and (min-width: 1280px) {
+    justify-content: center;
+
+    .nav1 {
+      margin-left: 50px;
+    }
+
+    .nav2 {
+      margin-left: 50px;
+    }
+  }
 }
 
 .nav1-link,
@@ -33,4 +71,5 @@
 
 .footer-heart {
   color: $statement-color;
+  font-size: 20px;
 }
