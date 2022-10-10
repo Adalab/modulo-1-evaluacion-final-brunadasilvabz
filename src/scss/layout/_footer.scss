@@ -6,7 +6,6 @@
   font-family: $font-main;
   font-size: 14px;
   line-height: 30px;
-  /*text-align: center;*/
   gap: 20px;
   padding-bottom: 40px;
 }
@@ -22,21 +21,19 @@
   border-style: none;
   background-color: white;
   transform: translateY(-50%);
-
 }
 
 .footer-content {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 30px;
+  gap: 20px;
 
   @media all and (min-width: 768px) {
-    text-align: left;
-    display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-right: 100px;
+    text-align: left;
+    justify-content: center;
+    gap: 100px;
 
     .nav1 {
       order: 2;

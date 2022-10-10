@@ -21,8 +21,6 @@
   color: $small-text-color;
   text-transform: capitalize;
   line-height: 30px;
-  
-
 }
 
 .section1-title {
@@ -30,7 +28,6 @@
   font-size: 24px;
   text-transform: capitalize;
   line-height: 30px;
-
 }
 
 .section1-paragraph {
@@ -54,6 +51,7 @@
   color: $statement-color;
   margin-bottom: 30px;
 
+  transition-duration: 0.4s;
 
   @media all and (min-width: 768px) {
     width: 90px;
@@ -62,4 +60,9 @@
   @media all and (min-width: 1280px) {
     width: 160px;
   }
+}
+
+.section1-button:active {
+  background-color: $statement-color;
+  color: white;
 }
