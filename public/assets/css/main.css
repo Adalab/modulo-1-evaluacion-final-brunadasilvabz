@@ -66,6 +66,8 @@ table {
   text-align: center; }
 
 .menu-button {
+  height: 30px;
+  width: 35px;
   position: fixed;
   top: 0;
   left: 0;
@@ -73,6 +75,16 @@ table {
   background-color: #0271bc;
   border-style: none;
   padding: 8px; }
+  @media all and (min-width: 768px) {
+    .menu-button {
+      height: 40px;
+      width: 40px;
+      padding: 10px; } }
+  @media all and (min-width: 1280px) {
+    .menu-button {
+      height: 45px;
+      width: 45px;
+      padding: 15px; } }
 
 .hero-title {
   font-family: "Roboto Slab", serif;
@@ -102,11 +114,13 @@ table {
       font-size: 24px;
       width: 20ch;
       line-height: 1.1;
-      margin: 20px; } }
+      margin-top: 20px;
+      margin-bottom: 10px; } }
   @media all and (min-width: 1280px) {
     .hero-paragraph {
       width: 100vh;
-      margin: 15px; } }
+      margin: 15px;
+      margin-top: 5px; } }
 
 .hero-arrow {
   height: 37px;
@@ -120,10 +134,11 @@ table {
     .hero-arrow {
       height: 45px;
       width: 42px;
-      margin-bottom: 20px; } }
+      margin-bottom: 45px; } }
   @media all and (min-width: 1280px) {
     .hero-arrow {
-      margin-bottom: 25px; } }
+      margin-bottom: 10px;
+      margin-top: 10px; } }
 
 /*SECTION 1*/
 .section1 {
@@ -139,11 +154,15 @@ table {
 
 .section1-small {
   margin-top: 35px;
+  margin-bottom: 5px;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: #8ccbea;
   text-transform: capitalize;
   line-height: 30px; }
+  @media all and (min-width: 768px) {
+    .section1-small {
+      margin-top: 15px; } }
 
 .section1-title {
   font-family: "Roboto Slab", serif;
@@ -157,6 +176,9 @@ table {
   line-height: 30px;
   margin-top: 20px;
   margin-bottom: 30px; }
+  @media all and (min-width: 768px) {
+    .section1-paragraph {
+      margin-bottom: 25px; } }
 
 .section1-button {
   height: 45px;
@@ -169,11 +191,12 @@ table {
   font-weight: 500;
   font-size: 20px;
   color: #f26002;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   transition-duration: 0.4s; }
   @media all and (min-width: 768px) {
     .section1-button {
-      width: 90px; } }
+      width: 90px;
+      margin-bottom: 40px; } }
   @media all and (min-width: 1280px) {
     .section1-button {
       width: 160px; } }
@@ -184,43 +207,52 @@ table {
 
 .section2 {
   background-color: #eff9ff;
-  padding: 15px;
   display: grid;
   text-align: center;
-  grid-template-columns: 1fr; }
+  grid-template-columns: 1fr;
+  grid-gap: 20px; }
   @media all and (min-width: 768px) {
     .section2 {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr; } }
+
+.section2-reasons {
+  padding: 15px 70px 5px 70px; }
+  @media all and (min-width: 768px) {
+    .section2-reasons {
+      padding: 0 15px 0 15px; } }
+  @media all and (min-width: 1280px) {
+    .section2-reasons {
+      padding: 0 30px 0 30px; } }
 
 .section2-title {
   font-family: "Roboto Slab", serif;
   font-size: 24px;
   text-transform: capitalize;
   line-height: 30px;
-  margin-top: 15px; }
+  margin-top: 30px; }
   @media all and (min-width: 768px) {
     .section2-title {
       font-size: 26px;
       grid-column-start: 1;
-      grid-column-end: 4; } }
+      grid-column-end: 4;
+      margin-top: 35px; } }
   @media all and (min-width: 1280px) {
     .section2-title {
       font-size: 32px; } }
 
-.section2-reasons-title {
+.section2-article-title {
   font-family: "Roboto Slab", serif;
   font-size: 18px;
   line-height: 30px; }
   @media all and (min-width: 768px) {
-    .section2-reasons-title {
+    .section2-article-title {
       font-size: 24px; } }
 
 .section2-reasons-paragraph {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  line-height: 30px;
-  margin-bottom: 30px; }
+  line-height: 30px; }
   @media all and (min-width: 768px) {
     .section2-reasons-paragraph {
       font-size: 20px;
@@ -236,15 +268,17 @@ table {
   color: white;
   background-color: #f26002;
   border-style: none;
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-top: 15px;
+  margin-bottom: 55px;
   justify-self: center;
   transition-duration: 0.4s; }
   @media all and (min-width: 768px) {
     .section2-button {
       width: 210px;
       grid-column-start: 2;
-      grid-column-end: 3; } }
+      grid-column-end: 3;
+      margin-top: 15px;
+      margin-bottom: 60px; } }
   @media all and (min-width: 1280px) {
     .section2-button {
       width: 255px; } }
@@ -262,11 +296,11 @@ table {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 30px;
-  gap: 20px;
   padding-bottom: 40px; }
 
 .footer-button {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 15px; }
 
 .footer-button-details {
   height: 45px;
@@ -280,13 +314,12 @@ table {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 20px; }
+  gap: 30px; }
   @media all and (min-width: 768px) {
     .footer-content {
       flex-direction: row;
       text-align: left;
-      justify-content: center;
-      gap: 100px; }
+      justify-content: space-around; }
       .footer-content .nav1 {
         order: 2; }
       .footer-content .nav2 {
