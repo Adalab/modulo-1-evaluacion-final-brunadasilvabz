@@ -72,6 +72,10 @@
   }
 }
 
+.section1-button:hover {
+  box-shadow: 0 0 20px;
+  transform: scale(1.1);
+}
 .section1-button:active {
   background-color: $statement-color;
   color: white;

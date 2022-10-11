@@ -21,6 +21,22 @@
   border-style: none;
   background-color: white;
   transform: translateY(-50%);
+  animation-name: footer-button;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes footer-button {
+  0% {
+    transform: translateY(-40%);
+    border-style: dotted;
+    border-color: $primary-bg-color;
+  }
+  100% {
+    transform: translateY(-60%);
+    border-style: dotted;
+    border-color: $statement-color;
+  }
 }
 
 .footer-content {
@@ -30,18 +46,20 @@
   gap: 30px;
 
   @media all and (min-width: 768px) {
+    justify-content: center;
     flex-direction: row;
     text-align: left;
-    justify-content: space-around;
 
     .nav1 {
       order: 2;
+      padding-right: 120px;
     }
     .nav2 {
       order: 3;
     }
     .copy {
       order: 1;
+      padding: 0 100px 0 45px;
     }
   }
 
@@ -49,11 +67,10 @@
     justify-content: center;
 
     .nav1 {
-      margin-left: 50px;
+      padding-right: 70px;
     }
-
-    .nav2 {
-      margin-left: 50px;
+    .copy {
+      padding: 0 30px 0 0;
     }
   }
 }
