@@ -26,6 +26,11 @@
   @media all and (min-width: 768px) {
     margin-top: 15px;
   }
+
+  @media all and (min-width: 1280px) {
+    font-size: 16px;
+    margin-top: 40px;
+  }
 }
 
 .section1-title {
@@ -33,6 +38,15 @@
   font-size: 24px;
   text-transform: capitalize;
   line-height: 30px;
+
+  @media all and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 45px;
+  }
+
+  @media all and (min-width: 1280px) {
+    font-size: 32px;
+  }
 }
 
 .section1-paragraph {
@@ -43,8 +57,8 @@
   margin-bottom: 30px;
 
   @media all and (min-width: 768px) {
-    margin-bottom: 25px;
-  }
+    margin-bottom: 30px
+  }  
 }
 
 .section1-button {
@@ -64,11 +78,12 @@
 
   @media all and (min-width: 768px) {
     width: 90px;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
   }
 
   @media all and (min-width: 1280px) {
     width: 160px;
+    margin-bottom: 45px;
   }
 }
 

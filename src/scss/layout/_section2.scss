@@ -7,12 +7,17 @@
 
   @media all and (min-width: 768px) {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.7fr 1fr 1fr;
+    grid-template-rows: 0.8fr 1fr 1fr;
   }
+
+  @media all and (min-width: 1280px) {
+    grid-template-rows: 0.9fr 1fr 1fr;
+  }
+
 }
 
 .section2-reasons {
-  padding: 15px 70px 5px 70px;
+  padding: 20px 70px 5px 70px;
 
   @media all and (min-width: 768px) {
     padding: 0 15px 0 15px;
@@ -32,6 +37,7 @@
 
   @media all and (min-width: 768px) {
     font-size: 26px;
+    line-height: 45px;
     grid-column-start: 1;
     grid-column-end: 4;
     margin-top: 35px;
@@ -59,7 +65,7 @@
 
   @media all and (min-width: 768px) {
     font-size: 20px;
-    margin-top: 5px;
+    margin-top: 12px;
   }
 
   @media all and (min-width: 1280px) {
@@ -86,7 +92,7 @@
     width: 210px;
     grid-column-start: 2;
     grid-column-end: 3;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-bottom: 60px;
   }
 

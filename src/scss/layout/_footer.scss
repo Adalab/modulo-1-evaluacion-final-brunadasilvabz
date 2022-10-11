@@ -2,11 +2,11 @@
 
 .footer {
   background-color: $primary-bg-color;
+  padding-bottom: 40px;
   color: $secondary-text-color;
   font-family: $font-main;
   font-size: 14px;
   line-height: 30px;
-  padding-bottom: 40px;
 }
 
 .footer-button {
@@ -44,6 +44,9 @@
   flex-direction: column;
   text-align: center;
   gap: 30px;
+  padding-left: 39px;
+  padding-right: 39px;
+  
 
   @media all and (min-width: 768px) {
     justify-content: center;
@@ -52,14 +55,15 @@
 
     .nav1 {
       order: 2;
-      padding-right: 120px;
+      padding-right: 160px;
     }
     .nav2 {
       order: 3;
+      padding-right: 35px;
     }
     .copy {
       order: 1;
-      padding: 0 100px 0 45px;
+      padding: 0 100px 0 0;
     }
   }
 
@@ -67,10 +71,13 @@
     justify-content: center;
 
     .nav1 {
-      padding-right: 70px;
+      padding-right: 80px;
+    }
+    .nav2 {
+      padding-right: 10px;
     }
     .copy {
-      padding: 0 30px 0 0;
+      padding: 0 40px 0 0;
     }
   }
 }
@@ -80,6 +87,7 @@
   text-decoration: none;
   color: $secondary-text-color;
   font-size: 16px;
+  line-height: 30px;
   text-transform: uppercase;
 }
 

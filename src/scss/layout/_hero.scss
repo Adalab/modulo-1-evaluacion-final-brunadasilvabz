@@ -61,7 +61,7 @@
   font-family: $font-main;
   color: $secondary-text-color;
   margin-top: 15px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 
   @media all and (min-width: 768px) {
     font-size: 24px;
@@ -75,6 +75,7 @@
     width: 100vh;
     margin: 15px;
     margin-top: 5px;
+    margin-bottom: 25px;
   }
 }
 

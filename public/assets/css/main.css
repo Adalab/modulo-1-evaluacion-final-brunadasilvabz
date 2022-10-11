@@ -108,7 +108,7 @@ table {
   font-family: "Roboto", sans-serif;
   color: white;
   margin-top: 15px;
-  margin-bottom: 40px; }
+  margin-bottom: 35px; }
   @media all and (min-width: 768px) {
     .hero-paragraph {
       font-size: 24px;
@@ -120,7 +120,8 @@ table {
     .hero-paragraph {
       width: 100vh;
       margin: 15px;
-      margin-top: 5px; } }
+      margin-top: 5px;
+      margin-bottom: 25px; } }
 
 .hero-arrow {
   height: 37px;
@@ -163,12 +164,23 @@ table {
   @media all and (min-width: 768px) {
     .section1-small {
       margin-top: 15px; } }
+  @media all and (min-width: 1280px) {
+    .section1-small {
+      font-size: 16px;
+      margin-top: 40px; } }
 
 .section1-title {
   font-family: "Roboto Slab", serif;
   font-size: 24px;
   text-transform: capitalize;
   line-height: 30px; }
+  @media all and (min-width: 768px) {
+    .section1-title {
+      font-size: 26px;
+      line-height: 45px; } }
+  @media all and (min-width: 1280px) {
+    .section1-title {
+      font-size: 32px; } }
 
 .section1-paragraph {
   font-family: "Roboto", sans-serif;
@@ -178,7 +190,7 @@ table {
   margin-bottom: 30px; }
   @media all and (min-width: 768px) {
     .section1-paragraph {
-      margin-bottom: 25px; } }
+      margin-bottom: 30px; } }
 
 .section1-button {
   height: 45px;
@@ -196,10 +208,11 @@ table {
   @media all and (min-width: 768px) {
     .section1-button {
       width: 90px;
-      margin-bottom: 40px; } }
+      margin-bottom: 42px; } }
   @media all and (min-width: 1280px) {
     .section1-button {
-      width: 160px; } }
+      width: 160px;
+      margin-bottom: 45px; } }
 
 .section1-button:hover {
   box-shadow: 0 0 20px;
@@ -218,10 +231,13 @@ table {
   @media all and (min-width: 768px) {
     .section2 {
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 0.7fr 1fr 1fr; } }
+      grid-template-rows: 0.8fr 1fr 1fr; } }
+  @media all and (min-width: 1280px) {
+    .section2 {
+      grid-template-rows: 0.9fr 1fr 1fr; } }
 
 .section2-reasons {
-  padding: 15px 70px 5px 70px; }
+  padding: 20px 70px 5px 70px; }
   @media all and (min-width: 768px) {
     .section2-reasons {
       padding: 0 15px 0 15px; } }
@@ -238,6 +254,7 @@ table {
   @media all and (min-width: 768px) {
     .section2-title {
       font-size: 26px;
+      line-height: 45px;
       grid-column-start: 1;
       grid-column-end: 4;
       margin-top: 35px; } }
@@ -260,7 +277,7 @@ table {
   @media all and (min-width: 768px) {
     .section2-reasons-paragraph {
       font-size: 20px;
-      margin-top: 5px; } }
+      margin-top: 12px; } }
 
 .section2-button {
   height: 45px;
@@ -281,7 +298,7 @@ table {
       width: 210px;
       grid-column-start: 2;
       grid-column-end: 3;
-      margin-top: 15px;
+      margin-top: 25px;
       margin-bottom: 60px; } }
   @media all and (min-width: 1280px) {
     .section2-button {
@@ -300,11 +317,11 @@ table {
 /*FOOTER*/
 .footer {
   background-color: #304268;
+  padding-bottom: 40px;
   color: white;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  line-height: 30px;
-  padding-bottom: 40px; }
+  line-height: 30px; }
 
 .footer-button {
   text-align: center;
@@ -348,7 +365,9 @@ table {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 30px; }
+  gap: 30px;
+  padding-left: 39px;
+  padding-right: 39px; }
   @media all and (min-width: 768px) {
     .footer-content {
       justify-content: center;
@@ -356,25 +375,29 @@ table {
       text-align: left; }
       .footer-content .nav1 {
         order: 2;
-        padding-right: 120px; }
+        padding-right: 160px; }
       .footer-content .nav2 {
-        order: 3; }
+        order: 3;
+        padding-right: 35px; }
       .footer-content .copy {
         order: 1;
-        padding: 0 100px 0 45px; } }
+        padding: 0 100px 0 0; } }
   @media all and (min-width: 1280px) {
     .footer-content {
       justify-content: center; }
       .footer-content .nav1 {
-        padding-right: 70px; }
+        padding-right: 80px; }
+      .footer-content .nav2 {
+        padding-right: 10px; }
       .footer-content .copy {
-        padding: 0 30px 0 0; } }
+        padding: 0 40px 0 0; } }
 
 .nav1-link,
 .nav2-link {
   text-decoration: none;
   color: white;
   font-size: 16px;
+  line-height: 30px;
   text-transform: uppercase; }
 
 .footer-heart {
