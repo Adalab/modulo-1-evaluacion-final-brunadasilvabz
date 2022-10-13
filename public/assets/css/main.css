@@ -141,6 +141,26 @@ table {
       margin-bottom: 10px;
       margin-top: 10px; } }
 
+.new-section {
+  width: 80vw;
+  background-color: #f26002;
+  color: white;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+  @media all and (min-width: 768px) {
+    .new-section {
+      flex-direction: row;
+      padding-left: 20px;
+      padding-right: 20px;
+      justify-content: space-between;
+      background-color: #304268; } }
+
+.new-section-link {
+  color: white;
+  text-decoration: none; }
+
 /*SECTION 1*/
 .section1 {
   padding: 15px; }

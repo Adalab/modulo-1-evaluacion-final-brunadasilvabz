@@ -1,0 +1,22 @@
+.new-section {
+width: 80vw;
+background-color: $statement-color;
+color: white;
+text-transform: capitalize;
+display: flex;
+flex-direction: column;
+text-align: center;
+
+@media all and (min-width: 768px) {
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+    background-color: $primary-bg-color;
+}
+}
+
+.new-section-link {
+    color: white;
+    text-decoration: none;
+}
